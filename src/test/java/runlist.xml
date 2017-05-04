@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+
+<suite name="test">
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+    <test name="hi">
+        <groups>
+            <run>
+                <!-- List which groups to run from all the tests included.-->
+                <!--  <include name="readonly"/> -->
+            </run>
+        </groups>
+
+        <!-- Included all tests that you would like to run. -->
+        <classes>
+            <class name="MainTest" />
+        </classes>
+
+    </test>
+</suite>
