@@ -33,6 +33,6 @@ public class BaseClass {
     @AfterClass
     public void closeApp(){
         driver.quit();
-        logger.info("==== Browser Session End ====");
+        logger.info("===== Browser Session End =====");
     }
 }
